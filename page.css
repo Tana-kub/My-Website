@@ -1,0 +1,637 @@
+/*
+    ================================================================
+    General Styles & Layout
+    ================================================================
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sukhumvit Set', 'Kanit', Arial, sans-serif; /* แนะนำให้ใช้ font ที่ใกล้เคียง */
+    background-color: #f0f2f5;
+    /* line-height: 1.4; */
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* เพิ่มเพื่อให้เมนูอยู่กึ่งกลาง */
+} 
+
+.logo a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px 0 0 0;
+    list-style: none;
+    z-index: 100;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #ccc;
+    margin: 4px 0;
+}
+
+/* -------------------หน้าการค้นหา------------- */
+
+.header-menu {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 5px;
+    padding: 20px 0; /* ปรับ padding ด้านซ้าย-ขวาเป็น 0 เพื่อให้ .header-menu-in ควบคุม */
+    display: flex; /* ใช้ Flexbox เพื่อจัดองค์ประกอบลูกให้อยู่กึ่งกลาง */
+    justify-content: center; /* จัดให้เนื้อหาอยู่กึ่งกลางตามแนวนอน */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-menu-in {
+    /* กำหนดให้ความกว้างไม่เกิน 60% ของหน้าจอ */
+    max-width: 60%; 
+    width: 100%; /* สำคัญ: ให้ขยายเต็ม max-width */
+    
+    display: flex;
+    flex-direction: column; /* จัดเรียงองค์ประกอบย่อยเป็นแนวตั้ง */
+    gap: 10px; /* เพิ่มระยะห่างระหว่าง breadcrumb กับ title */
+}
+
+/* เพื่อให้ breadcrumb ดูเรียบร้อย */
+.header-menu-in a {
+    text-decoration: none;
+    color: #0053ac; /* สีลิงก์ */
+}
+
+.header-menu-in span {
+    color: #8f8f8f;
+    margin: 0 5px;
+}
+
+/* Responsive ปรับให้เต็มจอในหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .header-menu-in {
+        max-width: 90%; /* ลดเหลือ 90% เพื่อให้มีขอบในหน้าจอเล็ก */
+        padding: 0 15px; /* เพิ่ม padding ด้านข้างหากจำเป็น */
+    }
+}
+
+/* --------------------หน้าเนื้อหา--------------- */
+
+.main-container {
+    /* max-width: 1200px; */
+    max-width: 60%;
+    margin: 20px auto;
+    display: grid;
+     /* Main content 2 ส่วน, Sidebar 1 ส่วน */
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+    ================================================================
+    Card Component
+    ================================================================
+*/
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-right: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.images-gallery {
+    margin-bottom: 15px;
+}
+
+.image-stack {
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+
+.gallery-image {
+    width: 25%;
+    border-radius: 6px;
+    object-fit: cover;
+    /* ทำภาพเป็นสี่เหลี่ยมจัตุรัส */
+    aspect-ratio: 1/1; 
+}
+
+.gallery-more {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.card-info {
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* .ad-tag {
+    background-color: #e0e0e0;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    color: #666;
+} */
+
+.restaurant-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.restaurant-tag {
+    font-size: 14px;
+    color: #999;
+}
+
+.restaurant-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.rating-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.star-icon {
+    width: 15px;
+    height: 15px;
+    fill: #ffc107;
+}
+
+.score {
+    font-weight: bold;
+    color: #333;
+}
+
+.score.red-score {
+    color: #e74c3c;
+}
+
+.review-count {
+    font-size: 12px;
+    color: #999;
+}
+
+.status.open {
+    font-size: 12px;
+    color: #27ae60;
+}
+
+.category-list span {
+    font-size: 12px;
+    color: #888;
+    background-color: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+.delivery-promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8f5e9;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.delivery-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.delivery-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.delivery-text {
+    font-size: 14px;
+    color: #2e7d32;
+    margin: 0;
+}
+
+.delivery-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*
+    ================================================================
+    Sidebar
+    ================================================================
+*/
+.sidebar {
+    padding: 0;
+}
+
+.sidebar-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Map Section */
+.map-placeholder .map-link {
+    display: block; 
+    position: relative; 
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+
+/* .map-placeholder {
+    border-radius: 8px;
+    overflow: hidden;
+} */
+
+.map-placeholder img {
+    width: 100%;
+    display: block;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.map-overlay :hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.map-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Featured Restaurants */
+.featured-restaurants .featured-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.featured-list-image {
+    width: auto;
+    height: 140px; /* กำหนดความสูงครอปตัด */
+    overflow: hidden;
+}
+
+.featured-list-img {
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.featured-item {
+    display: flex;
+    gap: 10px;
+}
+
+.item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.item-description {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.item-rating {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+    gap: 5px;
+}
+
+
+/*
+    ================================================================
+    Responsive Design
+    ================================================================
+*/
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -----------------footer tag----------------- */
+
+.main-footer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ส่วนที่รวม Contact, About, etc. (แถบสีเทาเข้ม) */
+.footer-contact-section {
+    background-color: #fff; /* สีเทาเข้มหลัก */
+    color: black; /* สีข้อความอ่อน */
+    padding: 40px 20px;
+}
+
+/* ตัวห่อหุ้มคอลัมน์ ใช้ Flexbox จัดเรียง 3 คอลัมน์ */
+.footer-columns-wrapper {
+    /* max-width: 1100px;  */
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* ระยะห่างระหว่างคอลัมน์ */
+}
+
+.footer-col {
+    /* flex-basis: 33.33%;  */
+    max-width: 33.33%;
+}
+
+.col-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; /* ชื่อหัวข้อสีขาว */
+    margin-bottom: 20px;
+}
+
+/* สไตล์ข้อความในคอลัมน์ About */
+.about-col .description-text {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-col .privilege-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #757575; /* ข้อความ Privilege เด่นขึ้นมาเล็กน้อย */
+    margin-bottom: 20px;
+}
+
+/* สไตล์คอลัมน์ Contact Us */
+.contact-col .contact-item {
+    font-size: 13px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.contact-col .contact-label {
+    font-weight: bold;
+    color: #757575; /* Label เช่น E-Mail: หนาขึ้น */
+    margin-right: 5px;
+}
+
+.contact-col a.contact-value {
+    color: #ff4747; /* สีแดงสำหรับ E-Mail ตามตัวอย่าง */
+    text-decoration: none;
+}
+
+.contact-col .address-block {
+    display: block; /* ทำให้ที่อยู่ขึ้นบรรทัดใหม่ */
+    margin-left: 0; /* แก้ไขเยื้องซ้าย */
+}
+
+/* สไตล์คอลัมน์ Menu (About Us) */
+.menu-col .footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-col .footer-menu li {
+    margin-bottom: 5px;
+}
+
+.menu-col .footer-menu a {
+    font-size: 13px;
+    color: #757575;
+    text-decoration: none;
+}
+
+.menu-col .footer-menu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Social Icons (ใช้กรอบสี่เหลี่ยมแทน icon จริง) */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #888; /* สีจำลอง icon */
+    border-radius: 2px;
+}
+
+
+/*
+    ================================================================
+    Copyright Bar
+    ================================================================
+*/
+.footer-copyright {
+    background-color: #fff; /* สีเทาเข้มกว่าแถบด้านบน */
+    color: #757575;
+    padding: 15px 0px 25px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.copyright-text {
+    max-width: 950px; /* จำกัดความกว้างให้ตรงกับเนื้อหาด้านบน */
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Responsive: สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .footer-columns-wrapper {
+        flex-direction: column; /* จัดเรียงคอลัมน์เป็นแนวตั้ง */
+        gap: 30px;
+    }
+
+    .footer-col {
+        max-width: 100%;
+        flex-basis: auto;
+    }
+}

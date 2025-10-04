@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หมวดร้านอาหาร</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <a href="index.html">S K E</a> 
+                </div>
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()">Dropdown</button>
+                    <ul class="dropdown-menu" id="myDropdown">
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------หน้าการค้นหา-------------- -->
+
+    <div class="header-menu">
+        <div class="header-menu-in">
+            <div class="breadcrumb">
+                <a href="index.html">หน้าแรก</a>
+                <span>/</span>
+                <span>ค้นหาร้านอาหาร</span>
+            </div>
+            <div class="title-container">
+                <h2>ร้านอาหาร ยอดนิยม</h2>
+            </div>
+        </div> 
+    </div>
+
+
+<!-- -------------เนื้อหา------------ -->
+    <div class="main-container">
+
+            <div class="main-content">
+                <a href="" class="review-card">
+                    <div class="restaurant-card">   
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/800x0/2024/12/23/820f0a62be6e45eeba18d84fa31f4171.jpg" alt="" class="gallery-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXf2BIDXn0aTqMvqqbtOXdF3K5eiGxFGMfg&s" alt="" class="gallery-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8lo9EADIKYXdVCqHsxa3k_TKwYx90Mi-mmiUylmXCfE5o_oGwY-KCZ8rfLcdi8NOwxE&usqp=CAU" alt="" class="gallery-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAdY_eRifdORysHlBoRIzfieesetZWENCdMhhqXg5vGAsIVO6P8rPFlCbPTa15mYyjnI&usqp=CAU" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+61</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <!-- <span class="ad-tag"></span> <a href="#" class="restaurant-name">ณ ลันตาคาเฟ่ & ปลาเผา</a> -->
+                            <p class="restaurant-name">ณ ลันตาคาเฟ่ & ปลาเผา</p>
+                            <p class="restaurant-tag">289 ซอย เลียบคลองระบายน้ำ ร. 1 ตำบล ควนลัง อำเภอหาดใหญ่ สงขลา</p>
+                        </div>
+                        <p class="restaurant-description">
+                            ลิ้มรสอาหารไทย&อีสาน เมี่ยงปลาเผาแซ่บๆ อาหารทะเลสดเกาะลันตาพร้อมบรรยากาศธรรมชาติและสัตว์น่ารักๆ ที่นี่...
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score">3.9</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">32 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารไทย</span>, <span>อาหารอีสาน</span>, <span>เครื่องดื่ม</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/192x192/2022/01/01/872b4fe115a74c74b0081b698c1365fe.jpg" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/487857877_1214379090688195_3929574546723658058_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=jXFa8J2m0K4Q7kNvwEblGOr&_nc_oc=AdlsbrNK-paVhdhJvwuzcaiK2WVklyre_2CpV1c24RlQjC7xhHTgqw6nUBXDwKYoqeY&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=iwb0yhRCvvgEJW2ZIexxgA&oh=00_AfbndRmf12mXHKMQs0ju-_GLJq29y45FmMQjf8STichQIQ&oe=68E0243B" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/518566059_1303199611806142_6367454724001852693_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qK2B-Ol44VkQ7kNvwF2dX2m&_nc_oc=Adk6KpdJP0OMv4sp5ch67zp7qEHeubOFNohWpXmb4LMImPwwX9BLhBXIjdLxUk6YEGc&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=Vm66I-FmT8OLiJoa9ngaJA&oh=00_Afaubp8UfxmKhm7jeIxkoWGr6pfclBD8uHGCytyyIgOGPg&oe=68E01362" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/492549915_1233752765417494_2675787619300053123_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HwTY1N_JyzUQ7kNvwFd6Gaa&_nc_oc=Adk4xyv5YTSKL2MbJI4WpWFOMsR-hPIKJhZFfE_EEyhvgtVsA0jbVZ88FUMo3wS5jOg&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=ajxtuz7bJJENndejyrkjUA&oh=00_AfYHU9E51SRJKJxpLREP53ilGpzE1SVOufkgrlwpifbkUg&oe=68E021DD" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">หลานตาชู by ทองมณี หาดใหญ่ - Larn Ta Chu by Thongmanee Hatyai</p>
+                            <p class="restaurant-tag">229 ถนน ศรีภูวนารถ ตำบล คอหงส์ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            หลานตาชูสาขาหาดใหญ่ ก็อร่อยเด็ดทุกเมนู ครบทุกไลฟ์สไตล์ทั้งอาหารไทย ฝรั่ง พิซซ่า อาหารพื้นบ้าน เครื่องดื่ม พร้อมมุมถ่ายภาพอีกเพียบ นึกถึงอาหารใต้ ต้องหลานตาชูเท่านั้น 
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.7</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">573 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารไทย,</span>, <span>อาหารฝรั่ง / ยุโรป</span>, <span>อาหารคลีน/สลัด</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/800x0/2023/11/27/740a3dd159c34fa0a35837867289142e.jpg" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/510313433_1167178935423457_2946682102044647599_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qmeVCO99ckMQ7kNvwEZ5PN2&_nc_oc=AdlbVl7fLdgsTi60s07pRDovxW3fhRTgE8TNO-RqRL0yI7T6pfAX3CaURi3nY-e73KI&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=MhdMQuHVsVj5U4IMsIFoMQ&oh=00_AfYzM2Wx1BZU1n9Jm-dy7Ig5o25gZUFeyqbp2L6RV0-dGQ&oe=68E04CD6" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/488932731_1107016931439658_4257351503625124946_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_2wMhKgTEGwQ7kNvwHcfs3a&_nc_oc=AdkmsXholdXIovvBfzVlC5MIPWyxba6uzP2MlzZxraiKTpb0-4CWB91sLWOMoDwLsMg&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=8GNveNTBRnumH_9DbyZTpA&oh=00_Afa_FNK3EIsgXDgNQW2IO8GZKrwBrAfWKaxulgn1SSIeQw&oe=68E05A16" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/487102889_1100754492065902_2901838693349844259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHdTJQW3abUQ7kNvwGGQWul&_nc_oc=Adnw_Dwyjv0Db66Kz4KJHu-tlJf_lGVyuG_Ug04oc9rAG1MKvuEdhIAgxX4T-ZjaJ9s&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=JCgpsasA-rvtsFYpZLcyXA&oh=00_AfZzm1eorJgO_QzZBYwmWi_oO9xJKrldsM2LwoXtdu_3Ng&oe=68E05B40" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">AYAMCHON (อายัมชอน)</p>
+                            <p class="restaurant-tag">555 ถนน ศุภสารรังสรรค์ ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            สายเกาหลี สายอปป้า มาจอยกับเราได้ที่ AYAMCHON ทุกสาขา เรามีทั้งไก่ทอดเกาหลี และอาหารเกาหลีให้เลือกหลากหลายตอบสนองนีทของทุกคนได้เป็นอย่างดี!!
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.1</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">52 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารเกาหลี</span>, <span>อาหารมุสลิม/ฮาลาล</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/800x0/2022/05/19/1db1bd8b38c54663b3eab56f6216d86e.jpg" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/475758171_635744302441582_3833695566444085656_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=vHnjEMGQoVgQ7kNvwFpaxae&_nc_oc=AdkfID077Zy1thfj9FLj-M0P8j0yLcR900f3QC2CQbdmDTmcp2QE4ON-CSR_dzuu5SE&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=tGhb3ny-pa5LTAa6kxpduA&oh=00_AfY05Jcj0tVAjFbcfMH6a7dDzbMDxogwbQyuGPTAidmDRQ&oe=68E04444" alt="" class="gallery-image">
+                                <img src="https://img.wongnai.com/p/1920x0/2016/05/07/de71c52b9f7941af85e87ab7c3259c15.jpg" alt="" class="gallery-image">
+                                <img src="https://img.wongnai.com/p/1920x0/2016/11/21/d35c987ca77c4ce48af377bc5dc4b240.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">ร้านข้าวแกงจำเนียร (สูตรดั้งเดิม)</span>
+                            <span class="restaurant-tag">29 ถนน ละม้ายสงเคราะห์ ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</span>
+                        </div>
+                        <p class="restaurant-description">
+                            อีกหนึ่งร้านอร่อยหลบมุม ที่เปิดมายาวนานกว่า40 ปี จากรุ่นสู่รุ่น มีเมนูข้าวแกงให้เลือกเยอะมั๊กมากกก ราคาไม่แพงจนเกินไป ให้เยอะจัดเต็ม อิ่มอร่อยล้นจาน น้ำพริกผักสดฟรี แวะมาลองกันได้ เฮียเม้งพาชิมร้านอร่อย
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.9</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">14 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารจานเดียว</span>, <span>อาหารไทย</span>, <span>ข้าวแกง</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/550164957_865002143353122_6924450263243643693_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=R9mMfdw3my4Q7kNvwFZT5JO&_nc_oc=Adm1RLba_-3poBbrSSusJUVY4FH03GFjA0tDRD_1Z14OQycp-FQxpIidSfYFK-5l5Do&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=0X90XmSkujoNnfZvmlJk4w&oh=00_AfZr3ohveBp_6Yd_VhQTYiQHb2VEgPXUXOAf_vcq5TE_sA&oe=68E0444F" alt="" class="gallery-image">
+                                <img src="https://img.wongnai.com/p/800x0/2020/11/08/245f71496615453fa9e82e781bc594bb.jpg" alt="" class="gallery-image">       
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/548555685_865002510019752_1855256922430084129_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JN5nI0kTRFUQ7kNvwH7Ywwr&_nc_oc=Adks3qquHKhgtmAkLgPOd9DQRAOeUkTgCQLlDvyA4Tm1zxmUn65RfGtkvh1X-2fM_bE&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=qLdb6Y4zSQO6fwnGPc-nvQ&oh=00_AfYIbGR3wIoJRVS63-9HuGfEHpkxRy9d5NdMa5Ore47yAQ&oe=68E04AF0" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/549672657_865003973352939_3841632335859187531_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7W7p73YiqQYQ7kNvwE2v3TW&_nc_oc=AdmptOAuLvpRKb5xhOwJZUUrVT_yDmPepfI3Q-aRXSf4cQMNa3G80qnkDT7kol4kef0&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=9xnNpUyzIWhWM5WKvi21MA&oh=00_AfZUsUhMCosD9V52XJRQdpjDWxQqdZUnGEaZzx0RS0HV_w&oe=68E03DF6" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">โชคดี แต่เตี้ยม (Chokdee Tae Tiam)</span>
+                            <span class="restaurant-tag">58 25 ถนน ละม้ายสงเคราะห์ ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110 </span>
+                        </div>
+                        <p class="restaurant-description">
+                            ร้านอาหารสบายๆ ในบรรยากาศเรียบง่าย ขายติ่มซำเป็นอาหารเช้าและมื้อเย็น
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.3</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">4,394 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>ร้านอาหารติ่มซำ</span>, <span>อาหารจีน</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/192x192/2023/12/11/b8c3a9a4447243b188e0377397e7d41e.jpg" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/494954417_1239935081470361_7148371634735973621_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_ohc=LQ-uZuwUn7gQ7kNvwEClcop&_nc_oc=Adm8t7fS3Qw9M68X9kW0_rRcUdR-At_wp8E4n60KIpPL2aH6r4xYxEzVALwciOJPnIo&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=hlWI7vS5bVcyMokJB71x5A&oh=00_AfaktK9d4Km1UTz2S45aM0cibvLr0YxXYYwrG8SF2BUkDQ&oe=68E0885B" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/490221462_1220421073421762_8381359993106105493_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=opdHbO6niecQ7kNvwH92Tqs&_nc_oc=AdlYT_j2wug6s9DHiBxLJhONt8VAbvW6pn62ezGkgCcv8c1ScwY9iNzkzlpIPDGvGIg&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=I-3rk8wiAimvvskG5EjzSg&oh=00_AfZdR038zRWHb3dsRch7eRdpq6FknFwfUToDOKqYzCyzaQ&oe=68E0A41C" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/486751157_1206207758176427_8590373824956705724_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_ohc=XWX0gZ-EmPEQ7kNvwGh9o3l&_nc_oc=AdmN2htQL4lQfO5gpZwwgqmfFZ61Ho4AL46TDxADt0RR_m3kxhwP-bzdnAv5M-P6Ld4&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=xH4KQiBsAk5Hbb8uuZSx1Q&oh=00_AfbxlNfxVjgbsJIIIQzqsJQ530Fta5ew54x8QBOpQukCXA&oe=68E0A640" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">ต้าเหยิน เบตงอาหารไทย-จีน สาขาหาดใหญ่</span>
+                            <span class="restaurant-tag">196/3 ถนน นิพัทธ์อุทิศ ๓ ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</span>
+                        </div>
+                        <p class="restaurant-description">
+                            อาหารพื้นเมืองเบตง ไก่สับ เคาหยก ถั่วเจี๋ยน หมูยี้ มั่นหมิ่นผักน้ำ ซุปปู ซี่โครงสวรรค์
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.3</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">613 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารจีน</span>, <span>อาหารกล่อง/ข้าวกล่อง เดลิเวอรี</span>, <span>อาหารตามสั่ง</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/192x192/2025/06/09/5d0d76e89db54db8aa2c4818adf180d5.jpg" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t51.82787-15/532406477_18079115569933465_3455045743953409740_n.jpg?stp=dst-jpegr_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=LhRl0T5G26sQ7kNvwEvewMb&_nc_oc=Adnt0amMaJYGARAWCOFueM0AkDC3PHLTXzw_SJyaDtdrCP8CQv3ntAG_HpkgPAgeLX0&_nc_zt=23&se=-1&_nc_ht=scontent-bkk1-1.xx&_nc_gid=S-NaM6WbCjtuCnyFKuaPCQ&oh=00_AfZ5cKFMWkaXL_fZHCQceWO9zcmZbFGZDArQn2WJhMGJRQ&oe=68E07F75" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/468911366_18055160134933465_2561494261213362656_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Mb2bVuZ0xnEQ7kNvwHnZVpp&_nc_oc=AdnyDFvsjokrSb7CWixCew850j-nIanjWmgWzm24iblifsSkDfx-IIa_SybS41DGFe0&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Q-ucoX02YJrUhUXIcCIDVg&oh=00_AfbGXf4ELwSTKXbn-grOnVGemBM5MrvsM9DKAiGFsUFG0g&oe=68E0B39F" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/468893922_18055158967933465_2086458656086721729_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RJ5csG9hvsgQ7kNvwF319Ko&_nc_oc=AdlwJyuyC5Vtj2WdpPuTxQy90jxDIB9hlXDWPh9_YoO_HtboLnSbbooraFfjxMCRugc&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=hMB0FgdbLjrKjJekVQv0cQ&oh=00_AfZzMKhcysLfXWLpA6p7uU4W4UqaiZKQ7m4NG3w8z25TFA&oe=68E0A6F8" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">Sirene - Cafe & Restaurant คาเฟ่ ลา ซีแรน</span>
+                            <span class="restaurant-tag">33 ราษฎร์ยินดี ซอย 3 ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</span>
+                        </div>
+                        <p class="restaurant-description">
+                            ร้านอาหารและคาเฟ่ริมน้ำบรรยากาศดี โรแมนติก อาหารอร่อย มีมุมถ่ายรูปสวยๆ มากมาย เหมาะสำหรับทุกโอกาส
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.8</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">413 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>เบเกอรี/เค้ก</span>, <span>คาเฟ่</span>, <span>ร้านกาแฟ/ชา</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/192x192/2024/05/27/ccc63a3fada74d36a2582dff51df377d.jpg" alt="" class="gallery-image">
+                                <img src="https://img.wongnai.com/p/1920x0/2024/11/01/767fded8f62d4980b5f5dce6f050cc54.jpg" alt="" class="gallery-image">
+                                <img src="https://img.wongnai.com/p/1920x0/2024/02/20/ecaf519123024bd0a640806b6cfa76eb.jpg" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/513105404_10163005068062766_2283523116721646295_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=10ZF7wQYwtQQ7kNvwH-hsY8&_nc_oc=Adlw79IfSq82U-I9P0pfIkcLSKTe2LtzcjHROOrnB-fHzuUwI5P6-E-TTq0X4wu9Fz8&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=GANMYldQShaliErn1ugykA&oh=00_AfbMdBA2cDLB5NkpLz4afDF3BNmCHmZIHyw3zytuIqRUHQ&oe=68E09634" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">Starbucks (สตาร์บัคส์)มหาวิทยาลัยสงขลานครินทร์</span>
+                            <span class="restaurant-tag">15, ถ.กาญจนวณิชย์ คอหงส์ หาดใหญ่ สงขลา (อาคารเรียนและปฎิบัติการพื้นฐานทางวิทยาศาสตร์ตึก BSC คณะวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์)</span>
+                        </div>
+                        <p class="restaurant-description">
+                            ร้านสตาร์บัคส์ มหาวิทยาลัยสงขลานครินทร์ น้องๆ นักศึกษาที่อยากเติมความสดชื่นด้วยเครื่องดื่มและขนมอร่อยๆ สามารถแวะไปได้ทุกวัน จันทร์ - อาทิตย์ เวลา 6.30 - 20.00 น.
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.7</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">46 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหาร,เครื่องดื่ม</span>, <span>ร้านกาแฟ/ชา</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/484032441_1252825456280844_5106638132854937783_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=iJw4yHxabZ8Q7kNvwGY3Axu&_nc_oc=Adm9WBZCivuZo1_ciK4zyjqMzPlE439Gd3ecsiDusYlY3Zcg6CTez8xB8Rl4iKKubB8&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=qrkskog0BqaJfDIcKXjCjQ&oh=00_AfZvPZqE7j-EE4CYz1mDJMRo5AP4m7qAyKUZDvpnHeIaTA&oe=68E2B573" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/486170252_9430419743661767_1885074481322408904_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HCBw4EOCixYQ7kNvwHDynag&_nc_oc=AdnzM3jGZt2GEhqJBYuKrx9kywlwL72NrcSGCgyddSvVIE5HSHsvL8-3fm52koQJ4Eg&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=eu71qCY7LrpT5_-CEqkjfg&oh=00_Afa5BnUp9SBhQBsnnGeNriBdA1Sho5zBoxuhL94p1gTPwQ&oe=68E2D1AD" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/482028410_9345867965450279_3633865640127710959_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NKec567hQTQQ7kNvwFAnPOl&_nc_oc=AdlfERrI964AqCfqghrIGKlcnmNUYZQesCdHiVFfNj4PoIlzqPSd6J8PYUzVZH7z0Lk&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=Np_ew-_G06TyfaqmxC7eJA&oh=00_AfYC3k3uD_U-xt7SSEP_O_QPXi2nA95Ob7ivG5DV4OeZvQ&oe=68E2E298" alt="" class="gallery-image">
+                                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/481996809_9326042190766190_7395708301885134567_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xnYnoXw8niAQ7kNvwGq1Gy5&_nc_oc=Adm21H4a6mkeOd2ooPAL75w6Z0zxHJ9OSCPPuBdHSHb3SWKSy9P9UrBGO1Axu5TJKuQ&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=Pz0NrlJUkJbKKN5Osp325w&oh=00_Afbt-NrDBzJU_fUtCHmyx2LKaCLzAx1KbbK7sdfETRgccw&oe=68E2E25C" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">ร้านอาหารป่ายาง</span>
+                            <span class="restaurant-tag">597 599 ถ.ธรรมนูญวิถี ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</span>
+                        </div>
+                        <p class="restaurant-description">
+                            ร้านป่ายางผ่านมาหลายรอบยังไม่เคยได้ลอง วันนี้มีโอกาสดีที่ได้ทานข้าวกับครอบครัวในวันสำคัญสุดพิเศษต่าง ๆ
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.4</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">938 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารใต้</span>, <span>อาหารไทย</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="https://img.wongnai.com/p/1920x0/2018/11/06/f75eabbe2a2f49b685c70d409d6b3dba.jpg" alt="" class="gallery-image">
+                                <img src="https://static.amarintv.com/media/PJVlR0ljpN9mLUs7bkrDbSGIXoNcvqGB9Ttsu7L5qG8xONGCpA3ozDiI9oee8ZlZLH.png" alt="" class="gallery-image">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/4a/24/05/khao-tom-nai-yoew.jpg?w=1200&h=1200&s=1" alt="" class="gallery-image">
+                                <img src="https://img.wongnai.com/p/256x256/2018/11/06/db2f330e09254a1c9819d5f08790c512.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="restaurant-name">ข้าวต้มนายยาว • Nai Yao Porridge 和利 </span>
+                            <span class="restaurant-tag">74/3-4 ถนน เสน่หานุสรณ์ ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</span>
+                        </div>
+                        <p class="restaurant-description">
+                            ร้านข้าวต้มนายยาว ร้านข้าวต้มเก่าแก่ของหาดใหญ่ เปิดทำการตั้งแต่ปีพ.ศ. 2495
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">4.2</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">1,120 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>อาหารจีน</span>, <span>อาหารไทย</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+            </div>
+            
+<!-- --------------------------------grid-right--------------------------- -->
+        <div class="sidebar">
+            <div class="sidebar-section map-section">
+                <h3 class="section-title">ค้นหาจากแผนที่</h3>
+                <div class="map-placeholder">
+                    <a href="https://www.google.com/maps/search/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%AD%E0%B8%94%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%99%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88/@7.0082533,100.4894776,15.14z?authuser=0&entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" class="map-link">
+                        <div class="map-overlay">
+                            <div class="map-button">ดูแผนที่</div> 
+                        </div>
+                        <img src="https://cdn.prod.website-files.com/5c29380b1110ec92a203aa84/66e5ce469b48938aa34d8684_Google%20Maps%20-%20Compressed.jpg" alt="Map">
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-section featured-restaurants">
+                <h3 class="section-title">รายการอื่น ๆ ที่น่าสนใจ</h3>
+                <div class="featured-list">
+                    <div class="featured-item">
+                        <img src="https://img.wongnai.com/p/192x192/2021/06/17/2c3a5105a1094895874254b1f9643d92.jpg" alt="SEQU Restaurant" class="item-image">
+                        <div class="item-info">
+                            <span class="ad-tag">Ad</span> <a href="#" class="item-name">SEQU Restaurant เดอะ คาสลิง แฟริ่ง</a>
+                            <p class="item-description">
+                                ร้าน Hangout สำหรับคนรักไก่ที่เชียงใหม่ กิน ดื่ม ดูดามะยัด ฟังเพลงเพราะ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://img.wongnai.com/p/192x192/2020/09/20/d1e2b5b3a4e941f1989025e115e5b3f1.jpg" alt="ครัวอร่อยอร่อย นครหลวง" class="item-image">
+                        <div class="item-info">
+                            <span class="ad-tag">Ad</span> <a href="#" class="item-name">ครัวอร่อยอร่อย นครหลวง</a>
+                            <div class="item-rating">
+                                <span class="score red-score">3.8</span>
+                                <span class="review-count">11 รีวิว</span>
+                            </div>
+                            <p class="item-description">
+                                ร้านอาหารครบจบที่ภาคเพลินๆ อาหารไทย จีน อีสาน พร้อมด้วยส่วนเล็ก ๆ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section featured-restaurants">
+                <h3 class="section-title">ร้านเพจ Facebook</h3>
+                <div class="featured-list">
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/p/%E0%B8%93-%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88-%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%9C%E0%B8%B2-Nalanta-Cafe-Plaphao-61550938704138/?locale=th_TH"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/457458540_122208474800031290_3412969725619605905_n.png?stp=dst-png_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=TnayJDZlrmAQ7kNvwFTxjvD&_nc_oc=AdngvCDiSpUTd2I2xXUUH1mr7ckf6BVvZ16mg1JjSlI0zZoqOtOiY60MbeCYA9zueS8&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=jXAWBSn4tLeMxM_AKi6aSQ&oh=00_AfaWwIyu0dMWi1G0eyQEjj97mIyFk_iEvARlsTsYLzkhJg&oe=68DC6FD0" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/p/%E0%B8%93-%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88-%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%9C%E0%B8%B2-Nalanta-Cafe-Plaphao-61550938704138/?locale=th_TH"> <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-1/372836480_2511180792382142_3377835120246500049_n.jpg?stp=c165.351.1429.1428a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=K1NIlSMP-FoQ7kNvwGSq2ua&_nc_oc=AdnsGxcOsTeBh78q_SSvKKlnbV-6OVxxPrfjd6BzsiBEvgXPHqnSNygGgcvH1yMekkw&_nc_zt=24&_nc_ht=scontent-bkk1-2.xx&_nc_gid=jXAWBSn4tLeMxM_AKi6aSQ&oh=00_AfYOPpBeCKFN07Vx8gWtd2Kjqx7XggsQNEr5DGs3SzIfCA&oe=68DC949E" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/p/%E0%B8%93-%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88-%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%9C%E0%B8%B2-Nalanta-Cafe-Plaphao-61550938704138/?locale=th_TH" class="item-name">ณ ลันตาคาเฟ่ & ปลาเผา Na'lanta Cafe & Plaphao</a>
+                            <p class="item-description">
+                                ร้านอาหาร · ลิ้มรสอาหารไทย&อีสาน เมี่ยงปลาเผาแซ่บๆ อาหารทะเลสดเกาะลันตาพร้อมบรรยากาศธรรมชาติและสัตว์น่ารักๆ ที่นี่...
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/larntachuhatyai?locale=th_TH"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/485146722_1194372099355561_1157092109535781268_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=_poLUvZTHtYQ7kNvwHcfhmU&_nc_oc=Adn-RwnJbuEIo0nA4LsXvWSl3bHRYGsuG9r6eu-K9yyFOnFff9iLvBwgcHoRVAMZRuo&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=RUFeFwNCig4JqNubi-FHFw&oh=00_AfYIl4FeKN8_L10sjAKeXfqe5RyY2_DD-gevODTcfYsBEg&oe=68E01FF5" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/larntachuhatyai?locale=th_TH"> <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/298434861_481355917323853_6242932244898184088_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=gW5SKiTdUK8Q7kNvwESkLDi&_nc_oc=Adlck4WbuASdPE7c-rlNXWUFiomJopGFhOXHUm_MJNe7ZoXvvtD-VqPFYlQ8isSE9vg&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=tV4MXEdm3dkbXuVdkdJp8Q&oh=00_Afa3ph8f3dXyca62hgPexogdg9gJJYZS0Lge9JIrYHuZMg&oe=68E0397D" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/larntachuhatyai?locale=th_TH" class="item-name">หลานตาชู by ทองมณี หาดใหญ่ - Larn Ta Chu by Thongmanee Hatyai</a>
+                            <p class="item-description">
+                                ร้านอาหาร · ร้านอาหาร ไทย ฝรั่ง ยุโรป สำรองจองโต๊ะ‼️ 📞โทร : 062-2939654 (ร้านอยู่ตรงข้ามโรงแรมบุรีศรีภู) Line ID : @larntachuhatyai
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/ayamchon?locale=th_TH"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/481217613_1071467481661270_3354089632609145307_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=OOPRh9P0YgYQ7kNvwH2t5e4&_nc_oc=Adk5vMjqoBDQilGG-IuSqgfZsljRFslO59bNe8DaElDBLzHKEaHXw63QlcJxsphvdZg&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=GswszejbAy3bQq4sEn3yzA&oh=00_AfbvsEHZvopowSF6ly5IDO9h-xT52UkuK_jslejhi_-WhQ&oe=68E030EB" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/ayamchon?locale=th_TH"> <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-1/480507694_1066318132176205_2666211092137114516_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=zULs73LsdhMQ7kNvwHHHZjx&_nc_oc=Adm7NcvrkAspWzeggonNNHwx4z_aaIm4kHwfEB42llkiGnje1PFcDVRCEfyo9P5WiLk&_nc_zt=24&_nc_ht=scontent-bkk1-1.xx&_nc_gid=GswszejbAy3bQq4sEn3yzA&oh=00_AfZr5A9zym26qX1X0G7zX5ZLRyT7Fur6l29O2fARlSzD0A&oe=68E01994" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/ayamchon?locale=th_TH" class="item-name">AYAMCHON หาดใหญ่</a>
+                            <p class="item-description">
+                                ร้านอาหาร · 𝗔𝗬𝗔𝗠𝗖𝗛𝗢𝗡 𝗛𝗮𝗹𝗮𝗹 𝗞𝗼𝗿𝗲𝗮𝗻 𝗥𝗲𝘀𝘁𝗮𝘂𝗿𝗮𝗻𝘁 🍗🇰🇷✨ เพจ · ร้านอาหาร ayamchon.official ayamchon_official
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/porn4247/"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/475758171_635744302441582_3833695566444085656_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=vHnjEMGQoVgQ7kNvwFpaxae&_nc_oc=AdkfID077Zy1thfj9FLj-M0P8j0yLcR900f3QC2CQbdmDTmcp2QE4ON-CSR_dzuu5SE&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=7GgcZzRJE93PActCWqighA&oh=00_Afa4BqvQ8ybQVsONrNBt2ER6unZXPm1SlMzo2cdZnDw3LQ&oe=68E04444" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/porn4247/"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/301166279_156089813740369_1852413429498054007_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GR8BBTvTi28Q7kNvwEXmfng&_nc_oc=Adkexd5jJqz80yTeKCGkfe28i4s64XadwdqtgHzkjh6ZwLafORs60EG5c43HMxG5-3Y&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=tLtYFdm1b_Kh9zfYHuNVOg&oh=00_Afaiv_Hoz7C4P1DKYud4YtXntZOMbF3TI7xIPgwwWtC3sQ&oe=68E05E82" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/porn4247/" class="item-name">ร้านข้าวแกงจำเนียร1</a>
+                            <p class="item-description">
+                                ร้านอาหาร · รีวิวอาหาร ข้าวแกงแสนอร่อยยยยสนใจ? เพจ · ร้านอาหารไทย 29 ถนนละม้ายสงเคราะห์, Hat Yai, Thailand, Songkhla 063 594 4247
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/ChokdeeTaeTiamHadyai?locale=th_TH"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/475340275_1021258523362230_4839584537539378518_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KVMFOo-bGWUQ7kNvwH9sjZm&_nc_oc=AdlMUrlOu2DPECUCxeOVGFz9nYlSh3_LQbMgQy232bm5XkoZAsh6Afwg2GbpjaVtiWk&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=w40U5w1oJ50BnZ6qKkGNUg&oh=00_Afa68j1LNFnMPU7X0J2Qy6PEshgnllgCkp0MFzYcTpYQOw&oe=68E033D2" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/ChokdeeTaeTiamHadyai?locale=th_TH"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/327213875_736745721371894_2296641074475330019_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=F3jKZiOYR9EQ7kNvwH_SpCX&_nc_oc=AdmhPzCmxtVSYwmScWIssm1SNVInsZuQw3Ydl9pkMGLwOVu8-xhtCcy65LLqEW3c2SY&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=dU0aETGsITcYttqVh37-EQ&oh=00_AfbIkXbjpd3VsuCmAlNxumlK-sJF72Xe0y17jQF9KkYIdQ&oe=68E05389" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/ChokdeeTaeTiamHadyai?locale=th_TH" class="item-name">โชคดีแต่เตี้ยม บะกุ๊ดเต๋ หาดใหญ่ </a>
+                            <p class="item-description">
+                                ร้านอาหาร · รอบเช้า 06.00-11.30 รอบเย็น 17.00-21.00 เพจ · ร้านอาหารติ่มซำ 58/25 ซอย ละม้ายสงเคราะห์ 1 ใกล้กับโรงแรมไดอิชิ, Hat Yai, Thailand, Songkhla 081 276 6251
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/TAYERNHATYAI"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/488696889_1216681660462370_6112927447708427625_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=dl6J-z8qI78Q7kNvwF9IgLU&_nc_oc=AdkeSSfTCTQuzgAGQqD4AaTH8dWSyprGnzmZoibgr8xNOQd3XH4d9FYi9DDhbk9hoOM&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=hxZWvIF87JYA8Tvd5QUewA&oh=00_AfbrgDhw1dhSKkJvjNuhgE-yDsIRLNT15EIzBnjdjBFzcQ&oe=68E093FB" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/TAYERNHATYAI"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/423012456_882195157244357_5425365653468288459_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3loPVAhHq3wQ7kNvwHM2j99&_nc_oc=Admcjoh4K_CAwe_ajR4rqeOMsKdazjQmOq3RzeTnW5yo0mtXVsXj56_oe9Ak3HrS9jw&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=TzPsTtJ14NBD0ehjf8TKew&oh=00_Afbklk-JPTohZufts1jS3uIIFNXdvaDht_ROWafy_Uo6SA&oe=68E09BA5" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/TAYERNHATYAI" class="item-name">ร้านต้าเหยิน สาขาหาดใหญ่ </a>
+                            <p class="item-description">
+                                ร้านอาหาร · เพจ · ธุรกิจท้องถิ่น 196/3 ถนน นิพัทธ์อุทิศ3, Hat Yai, Thailand, Songkhla 074 354 051 tayernbetong.yellowpages.co.th
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/sirenecafe.official"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t51.75761-15/470918656_18057009037933465_4836389066638930035_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=2teP05RomjUQ7kNvwGt2EzQ&_nc_oc=AdkRDx66OVRmdKwR0rwbDeyTv3bvTZ53T2YY512sYt4wYLvEnKjstNjWq4b2N07_ZSQ&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=hS13JgZ7WNSmrqH30LG25Q&oh=00_Afaw9d1ku9Vv7Ik6f9bUa5XJhD-sK4779aCGaCye01BrJA&oe=68E08FDA" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/sirenecafe.official"> <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/500229784_1086765656806794_4947291820214663318_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mpRicuxsRPcQ7kNvwFh_8Us&_nc_oc=Adm8Orn2mOZxo3yvI0MOXyOrZ2ADeunghAgfKIZLl-Omh_VHTxwvL2qR0RQGtg30pO8&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=Vk2sxDW0llS1v12scDNn9A&oh=00_AfbyLs0_vQnzyM5RtbdBSiuGHO9pqADCFl1SXkh6M1OzOw&oe=68E0A1CE" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/sirenecafe.official" class="item-name">Sirene Cafe & Restaurant </a>
+                            <p class="item-description">
+                                ร้านอาหาร · COFFEE DRINKS PASTRY BAKERY BREAKFAST เพจ · ร้านกาแฟ 33 Rajyindee Soi 3, Hat Yai, Thailand, Songkhla 064 445 2596
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/StarbucksThailand"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/545408103_1224853896349478_2004279861808676626_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=3vJ62eBWx9gQ7kNvwFe7wSb&_nc_oc=AdkJdwkxIP9HhFKZXZTch6keNQolse5eMW5hH1-PtM0Sk03OMR6NAWn9XPePfL4j60o&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=6J_rTBn-F_qV4TktQxNTWQ&oh=00_AfY2SywJuoqVkJyn-dAsC003VwCjpKZTzTnXXm3f_6YJNw&oe=68E09858" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/StarbucksThailand"> <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/352350803_272692598473458_7349536204246871646_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=OOXeX4Of60QQ7kNvwFF_3NC&_nc_oc=AdmMU27dlsoeGd_bCVd-ZpErvzWl8XeQRuT3V5DfWu1zWU3KYMv7_tbqkjRbcoaOSXc&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=99vtDeaHKrcOSZ5pw4J23Q&oh=00_AfasqDe0PS9TGQ9iJfX1Drirhdn5tQXT_hn8sU2febAXzw&oe=68E0B668" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/StarbucksThailand" class="item-name">Starbucks Thailand</a>
+                            <p class="item-description">
+                                ร้านอาหาร · Starbucks Customer Care ที่ 02-339-0996 customercomment@coffee-concepts.co.th www.starbucks.co.th
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/payangrestaurant?locale=th_TH"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/488903791_1271718654391524_5773593183612491211_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=BRZ65DGrQL8Q7kNvwGLnun_&_nc_oc=Adk8nUy6LoR6oqReylDOY-v6yk8bkJyIps2SdcWkS3MJ6Pvv5voiwmK-M9HWP7I1zn4&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=97GXdQJctGNX1tmvp6AvwA&oh=00_Afatmii3ki11OIbomNNl6EPVcsNGFvzT_Z_kRF0hPPGN6A&oe=68E2CFD3" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/payangrestaurant?locale=th_TH"> <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/185269386_4129865140383947_2577737630166656853_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=dDsD8F27x9QQ7kNvwFtWxIY&_nc_oc=AdlTVoHZxntSqFhDJ9AgEIL5fYfO_dYj3-AF61I77gZOy6q8IQ1zPI0AdJIN0nUcj0Q&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Btwrwn_MBwTTjWVECR2nKQ&oh=00_AfaQmMAcynIeH0-LNGCfbEFfOpTiEAy3VArE_lBlKLp4RA&oe=68E2B280" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/payangrestaurant?locale=th_TH" class="item-name">ชื่อร้าน</a>
+                            <p class="item-description">
+                                ร้านอาหาร · ร้านอาหารป่ายาง ? เพจ · ร้านอาหารใต้ ร้านอาหารป่ายาง, Hat Yai, Thailand, Songkhla 081 099 7888
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/profile.php?id=100056794105450"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/539518924_1309447257625065_6674194975202992681_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=bZxQYE3l5oAQ7kNvwFSvVnf&_nc_oc=AdnqGGm0RLMlH2HsbxhGLGoOFW-fIES-F7NpphoVYkGM9KehdPAEmlMpAlcbL2zQ4ts&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=BkGF32SM6WqwolScgZy9Sw&oh=00_AfbWCJL3fEfLgEKpKw8TcFBwA6XrcKdLjxL2VLQsuvDOfQ&oe=68E2B392" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/profile.php?id=100056794105450"> <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/550604806_1330925165477274_5297496029361202843_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=4_5SEbnBpf0Q7kNvwGUgOY9&_nc_oc=AdnOdMoZFmrp-tp7TS7R9qRsGIEgQb_2oi9cu3BU24sMNBxOSPNz5BAIQmSCGRNb7t0&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=3WfIzch8cOoC-3XvRBPX0Q&oh=00_AfYyJUMafTp1AcRhy4HDyFC6JIWa8pIaJcM1hje_Hwy1cw&oe=68E2CBC4" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/profile.php?id=100056794105450" class="item-name">ข้าวต้มนายยาว • Nai Yao Porridge 和利 </a>
+                            <p class="item-description">
+                                ร้านอาหาร · เพจ · ร้านอาหาร 74/3-4 ถ.เสน่หานุสรณ์ อ.หาดใหญ่, Hat Yai, Thailand, Songkhla 089 659 9888
+                            </p>
+                        </div>
+                    </div>
+                    
+                <!-- ------------------------------------------------------ -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------ -->
+<!-- --------------footer tag-------------- -->
+        <footer class="main-footer">
+            <div class="footer-contact-section">
+                <div class="footer-columns-wrapper">
+
+                    <div class="footer-col about-col">
+                        <h4 class="col-title">WE Intellectual Property</h4>
+                        <p class="description-text">
+                            WE IP - Providing intellectual property and related legal services throughout the Asia-Pacific and far beyond.
+                        </p>
+                        <p class="privilege-text">
+                            "Protecting Your IP Rights Is Our Privilege."
+                        </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"></a>
+                            <a href="#" class="social-icon"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col contact-col">
+                        <h4 class="col-title">Contact Us</h4>
+                        <div class="contact-item">
+                            <span class="contact-label">E-Mail:</span>
+                            <a href="mailto:mail@weintellectual.com" class="contact-value">mail@weintellectual.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span class="contact-value">+66 2 115 1336</span>
+                        </div>
+                        <div class="contact-item address-item">
+                            <span class="contact-label">Address:</span>
+                            <span class="contact-value address-block">
+                                WE Intellectual Property Co., Ltd.<br>
+                                87/1 Capital Tower, All Seasons Place, Unit 1505, 15th Floor, Wireless Road, Lumpini,<br>
+                                Pathumwan, Bangkok 10330, Thailand
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="footer-col menu-col">
+                        <h4 class="col-title">About Us</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Practice Areas</a></li>
+                            <li><a href="#">Our People</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="copyright-text">
+                    Copyright 2021 © WE Intellectual Property Co., Ltd.
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
