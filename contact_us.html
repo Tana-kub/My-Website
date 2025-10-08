@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ทีมงานของเรา (New Design)</title>
+    <style>
+        /* ------------------- CSS STYLES ------------------- */
+        body {
+            /* font-family: 'Ariel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Sukhumvit Set', 'Kanit', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #edf0f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+nav {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    line-height: normal;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* เพิ่มเพื่อให้เมนูอยู่กึ่งกลาง */
+} 
+
+.logo a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px 0 0 0;
+    list-style: none;
+    z-index: 100;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #ccc;
+    margin: 4px 0;
+}
+
+/* --------header--------- */
+        .header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            /* background: linear-gradient(270deg, #fff6c3, #ffffff, #cce5ff); */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .member-card {
+            background-color: white;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 30px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid transparent;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Highlight สีตามคน */
+        .member-card:nth-child(1) { border-top-color: #007bff; }
+        .member-card:nth-child(2) { border-top-color: #28a745; }
+        .member-card:nth-child(3) { border-top-color: #ffc107; }
+
+        .profile-img {
+            width: 220px; /* ขยายรูปให้ใหญ่ขึ้น */
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 6px solid #f0f0f0;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover .profile-img {
+            transform: scale(1.05);
+        }
+
+        .member-card h2 {
+            margin: 0 0 5px;
+            font-size: 1.8em;
+            color: #007bff;
+        }
+
+        .member-card p.role {
+            font-size: 1.1em;
+            color: #6c757d;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .member-card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .member-card button:hover {
+            background-color: #218838;
+            transform: scale(1.02);
+        }
+
+        /* ------------------- MODAL STYLES (Pop-up) ------------------- */
+        .modal {
+            display: none; /* ซ่อนไว้ก่อน */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6); /* ฉากหลังทึบ */
+            padding-top: 60px;
+            animation: fadeIn 0.3s;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 751px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .modal-content h2 {
+            color: #007bff;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .modal-body-details {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .modal-body-details img {
+            width: 220px;
+            height: 220px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 4px solid #007bff;
+        }
+
+        .modal-body-text {
+            text-align: left;
+        }
+
+        .modal-body-text h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        
+        .modal-body-text ul {
+            padding-left: 20px;
+        }
+
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        /* Responsive for Modal */
+        @media (max-width: 600px) {
+            .modal-content {
+                width: 90%;
+                margin: 20% auto;
+            }
+            .modal-body-details {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .modal-body-text {
+                text-align: center;
+            }
+        }
+
+        /* -----------------footer tag----------------- */
+
+.main-footer {
+    width: 100%;
+    margin-top: 20px;
+    line-height: normal;
+}
+
+/* ส่วนที่รวม Contact, About, etc. (แถบสีเทาเข้ม) */
+.footer-contact-section {
+    background-color: #fff; /* สีเทาเข้มหลัก */
+    color: black; /* สีข้อความอ่อน */
+    padding: 40px 20px;
+}
+
+/* ตัวห่อหุ้มคอลัมน์ ใช้ Flexbox จัดเรียง 3 คอลัมน์ */
+.footer-columns-wrapper {
+    /* max-width: 1100px;  */
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* ระยะห่างระหว่างคอลัมน์ */
+}
+
+.footer-col {
+    /* flex-basis: 33.33%;  */
+    max-width: 33.33%;
+}
+
+.col-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; /* ชื่อหัวข้อสีขาว */
+    margin-bottom: 20px;
+}
+
+/* สไตล์ข้อความในคอลัมน์ About */
+.about-col .description-text {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-col .privilege-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #757575; /* ข้อความ Privilege เด่นขึ้นมาเล็กน้อย */
+    margin-bottom: 20px;
+}
+
+/* สไตล์คอลัมน์ Contact Us */
+.contact-col .contact-item {
+    font-size: 13px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.contact-col .contact-label {
+    font-weight: bold;
+    color: #757575; /* Label เช่น E-Mail: หนาขึ้น */
+    margin-right: 5px;
+}
+
+.contact-col a.contact-value {
+    color: #ff4747; /* สีแดงสำหรับ E-Mail ตามตัวอย่าง */
+    text-decoration: none;
+}
+
+.contact-col .address-block {
+    display: block; /* ทำให้ที่อยู่ขึ้นบรรทัดใหม่ */
+    margin-left: 0; /* แก้ไขเยื้องซ้าย */
+}
+
+/* สไตล์คอลัมน์ Menu (About Us) */
+.menu-col .footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-col .footer-menu li {
+    margin-bottom: 5px;
+}
+
+.menu-col .footer-menu a {
+    font-size: 13px;
+    color: #757575;
+    text-decoration: none;
+}
+
+.menu-col .footer-menu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Social Icons (ใช้กรอบสี่เหลี่ยมแทน icon จริง) */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #888; /* สีจำลอง icon */
+    border-radius: 2px;
+}
+
+
+/*
+    ================================================================
+    Copyright Bar
+    ================================================================
+*/
+.footer-copyright {
+    background-color: #fff; /* สีเทาเข้มกว่าแถบด้านบน */
+    color: #757575;
+    padding: 15px 0px 25px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.copyright-text {
+    max-width: 950px; /* จำกัดความกว้างให้ตรงกับเนื้อหาด้านบน */
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Responsive: สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .footer-columns-wrapper {
+        flex-direction: column; /* จัดเรียงคอลัมน์เป็นแนวตั้ง */
+        gap: 30px;
+    }
+
+    .footer-col {
+        max-width: 100%;
+        flex-basis: auto;
+    }
+}
+
+
+
+        /* ------------------- Animations ------------------- */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <a href="index.html">H Y E</a> 
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <!-- <li><a href="#">SERVICES</a></li> -->
+                    <!-- <li><a href="#">PORTFOLIO</a></li> -->
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()">Dropdown</button>
+                    <ul class="dropdown-menu" id="myDropdown">
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!---------------------- ส่วนของheader --------------------->
+
+
+    <div class="header">
+        <h1>ทีมผู้ก่อตั้งโปรเจกต์ของเรา</h1>
+        <p>เราคือทีมเล็กๆ ที่มีแพสชั่นในการค้นพบและแบ่งปันสถานที่น่าสนใจในประเทศไทย</p>
+    </div>
+
+    <div class="team-container">
+
+        <div class="member-card" onclick="openModal('member1')">
+            <img src="https://t3.ftcdn.net/jpg/08/28/49/30/360_F_828493018_Ntaia2HBMK7UHVFyP8jv0UrTcD7Fk7pw.jpg" alt="Profile 1" class="profile-img">
+            <h2>นาย ธนกร ชิดเชื้อ</h2>
+            <p class="role">Front-End Developer & UI/UX Designer</p>
+            <p>ปรัชญา: ดีไซน์ที่ดีเริ่มต้นจากการเข้าใจปัญหาของผู้ใช้งานจริง</p>
+            <button>ดูรายละเอียดเพิ่มเติม</button>
+        </div>
+
+        <div class="member-card" onclick="openModal('member2')">
+            <img src="https://t3.ftcdn.net/jpg/08/28/49/30/360_F_828493018_Ntaia2HBMK7UHVFyP8jv0UrTcD7Fk7pw.jpg" alt="Profile 2" class="profile-img">
+            <h2>นาย ธีรเมธ บุญจันทร์</h2>
+            <p class="role">Back-End Developer & System Architect</p>
+            <p>วิสัยทัศน์: มุ่งมั่นสร้างสรรค์ระบบที่รวดเร็วและเป็นมิตรต่อผู้ใช้งาน</p>           
+            <button>ดูรายละเอียดเพิ่มเติม</button>
+        </div>
+
+        <div class="member-card" onclick="openModal('member3')">
+            <img src="img/บั้ม.jpg" alt="Profile 3" class="profile-img">
+            <h2>นาย ปฏิภาณ ไฝกอบสม</h2>
+            <p class="role">Data Curator & Quality Assurance (QA)</p>
+            <p>ความสนใจ: การสำรวจสถานที่ลับและสร้างเนื้อหาที่น่าเชื่อถือ</p>
+            <button>ดูรายละเอียดเพิ่มเติม</button>
+        </div>
+
+    </div>
+
+    <div id="member1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('member1')">&times;</span>
+            <h2>รายละเอียดของ นาย ธนกร ชิดเชื้อ (6610510126)</h2>
+            <div class="modal-body-details">
+                <img src="" alt="Profile A">
+                <div class="modal-body-text">
+                    <h3>บทบาทหลัก: Front-End Developer & UI/UX Designer</h3>
+                    <p><strong>ประวัติย่อ:</strong> นักศึกษาที่มีความหลงใหลในการออกแบบส่วนหน้า (User Interface) และการทำให้เว็บเพจมีปฏิสัมพันธ์ (Interactivity) กับผู้ใช้ รับผิดชอบการออกแบบและพัฒนาส่วนหน้าทั้งหมดของ Hatyai Explorer ให้เป็นไปตามมาตรฐานเว็บสมัยใหม่</p>
+                    <p><strong>ความถนัด:</strong></p>
+                    <ul>
+                        <li>HTML5, CSS3 (รวมถึง Flexbox/Grid), JavaScript</li>
+                        <li>การทำ Responsive Design</li>
+                        <li>การใช้เครื่องมือออกแบบ</li>
+                    </ul>
+                    <p><strong>ติดต่อ:</strong> 6610510126@psu.ac.th</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="member2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('member2')">&times;</span>
+            <h2>รายละเอียดของ นาย ธีรเมธ บุญจันทร์ (6610510150)</h2>
+            <div class="modal-body-details">
+                <img src="https://t3.ftcdn.net/jpg/08/28/49/30/360_F_828493018_Ntaia2HBMK7UHVFyP8jv0UrTcD7Fk7pw.jpg" alt="Profile B">
+                <div class="modal-body-text">
+                    <h3>บทบาทหลัก: Back-End Developer & System Architect</h3>
+                    <p><strong>ประวัติย่อ:</strong> ผู้ดูแลด้านสถาปัตยกรรมระบบทั้งหมด รับผิดชอบการออกแบบฐานข้อมูล การสร้าง API (Application Programming Interface) เพื่อเชื่อมต่อข้อมูลระหว่าง Front-End และ Back-End รวมถึงการติดตั้งและบำรุงรักษาเซิร์ฟเวอร์จำลองสำหรับโปรเจกต์</p>
+                    <p><strong>ความถนัด:</strong></p>
+                    <ul>
+                        <li>Programming Languages เช่น PHP หรือ Python</li>
+                        <li>Database Management (SQL/NoSQL)</li>
+                        <li>การจัดการ Server Environment พื้นฐาน</li>
+                    </ul>
+                    <p><strong>ติดต่อ:</strong> 6610510150@psu.ac.th</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="member3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('member3')">&times;</span>
+            <h2>รายละเอียดของ นาย ปฏิภาณ ไฝกอบสม (6610510182)</h2>
+            <div class="modal-body-details">
+                <img src="img/บั้ม.jpg" alt="Profile C">
+                <div class="modal-body-text">
+                    <h3>บทบาทหลัก: Data Curator & Quality Assurance (QA)</h3>
+                    <p><strong>ประวัติย่อ:</strong> นักสำรวจตัวจริงของหาดใหญ่ รับผิดชอบการเก็บรวบรวมข้อมูลภาคสนาม การติดต่อสื่อสารเพื่อยืนยันความถูกต้องของข้อมูล (เช่น เวลาเปิด-ปิด, พิกัด) และการนำเข้าข้อมูลเข้าสู่ระบบจัดการเพื่อให้พร้อมสำหรับการใช้งาน</p>
+                    <p><strong>ความถนัด:</strong></p>
+                    <ul>
+                        <li>การใช้เครื่องมือ Database พื้นฐาน</li>
+                        <li>การวิเคราะห์ข้อมูลเบื้องต้น</li>
+                        <li>ทักษะการสื่อสารเพื่อประสานงานการเก็บข้อมูล</li>
+                    </ul>
+                    <p><strong>ติดต่อ:</strong> 6610510182@psu.ac.th</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------footer tag-------------- -->
+
+        <footer class="main-footer">
+            <div class="footer-contact-section">
+                <div class="footer-columns-wrapper">
+
+                    <div class="footer-col about-col">
+                        <h4 class="col-title">Hatyai Explorer</h4>
+                        <p class="description-text">
+                            Hatyai Explorer เป็นแพลตฟอร์มดิจิทัลที่มุ่งมั่นจะเป็น <br> 'คู่มือออนไลน์ฉบับสมบูรณ์' สำหรับการสำรวจพื้นที่ อำเภอหาดใหญ่ จังหวัดสงขลา โดยเฉพาะ
+                        </p>
+                        <p class="privilege-text">
+                            "ค้นพบเสน่ห์หาดใหญ่ในฉบับสมบูรณ์"
+                        </p>
+                        <!-- <div class="social-icons">
+                            <a href="#" class="social-icon"></a>
+                            <a href="#" class="social-icon"></a>
+                        </div> -->
+                    </div>
+
+                    <div class="footer-col contact-col">
+                        <h4 class="col-title">Connect with Us</h4>
+                        <div class="contact-item">
+                            <span class="contact-label">E-Mail:</span> <br>
+                            <a href="mailto:6610510126@psu.ac.th" class="contact-value">6610510126@psu.ac.th</a> <br>
+                            <a href="mailto:6610510150@psu.ac.th" class="contact-value">6610510150@psu.ac.th</a> <br>
+                            <a href="mailto:6610510182@psu.ac.th" class="contact-value">6610510182@psu.ac.th</a>
+                        </div>
+                        <!-- <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span class="contact-value">+66 2 115 1336</span>
+                        </div> -->
+                        <div class="contact-item address-item">
+                            <span class="contact-label">Address:</span>
+                            <span class="contact-value address-block">
+                                มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่<br>
+                                15, ถนน กาญจนวณิชย์, ตำบลคอหงส์, อำเภอหาดใหญ่, จังหวัดสงขลา, 90110
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="footer-col menu-col">
+                        <h4 class="col-title">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="restaurant.html">ร้านอาหาร</a></li>
+                            <li><a href="travel.html">สถานที่ท่องเที่ยว</a></li>
+                            <li><a href="stay.html">สถานที่พักผ่อน</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="footer-col menu-col">
+                        <h4 class="col-title">About Us</h4>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="copyright-text">
+                    &copy; 2025 Hatyai Explorer Project. All Rights Reserved. | A Project for 477-301 FULL STACK WEB DEVELOPMENT.
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    <script>
+        // ฟังก์ชันเปิด Modal (Pop-up)
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            // ปิดการ Scroll ของหน้าหลักเมื่อ Modal เปิด
+            document.body.style.overflow = "hidden";
+        }
+
+        // ฟังก์ชันปิด Modal (Pop-up)
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            // เปิดการ Scroll ของหน้าหลัก
+            document.body.style.overflow = "auto";
+        }
+
+        // ปิด Modal เมื่อคลิกนอกพื้นที่ Modal Content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto"; // เปิด Scroll
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

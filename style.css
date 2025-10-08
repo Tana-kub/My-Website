@@ -14,11 +14,13 @@ body {
 nav {
     padding: 2rem;
     background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -103,7 +105,6 @@ nav {
     /* max-width: 800px; */
     position: relative;
     margin: 0 auto; /* เพิ่ม margin เพื่อให้ไม่ติดกับ navbar */
-    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -219,7 +220,7 @@ nav {
     background-color: #edf0f2;
 }
 .content-in {
-    width: 50%;
+    width: 55%;
     height: auto;
     background-color: #fff;
     margin: 10px;
@@ -290,10 +291,6 @@ nav {
     /* border-bottom-color: #007bff; */
 }
 
-.tab-link2:hover, .tab-link2.active {
-    /* color: #007bff; */
-    /* border-bottom-color: #007bff; */
-}
 
 /*
     ================================================================
@@ -461,22 +458,6 @@ nav {
 }
 
 /* -----------------footer tag----------------- */
-/* footer {
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-}
-
-.footer-box {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.footer-first {
-    width: 39%;
-} */
-
 
 .main-footer {
     width: 100%;

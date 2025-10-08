@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หมวดที่พัก</title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <a href="index.html">H Y E</a> 
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <!-- <li><a href="#">SERVICES</a></li> -->
+                    <!-- <li><a href="#">PORTFOLIO</a></li> -->
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()">Dropdown</button>
+                    <ul class="dropdown-menu" id="myDropdown">
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -----------------หน้าการค้นหา-------------- -->
+
+    <div class="header-menu">
+        <div class="header-menu-in">
+            <div class="breadcrumb">
+                <a href="index.html">หน้าแรก</a>
+                <span>/</span>
+                <span>ค้นหาสถานที่พัก</span>
+            </div>
+            <div class="title-container">
+                <h2>สถานที่พัก ยอดนิยม</h2>
+            </div>
+        </div> 
+    </div>
+
+
+<!-- -------------เนื้อหา------------ -->
+    <div class="main-container">
+
+            <div class="main-content">
+                <a href="" class="review-card">
+                    <div class="restaurant-card">   
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/TR Rock Hill Hotel/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/TR Rock Hill Hotel/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/TR Rock Hill Hotel/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/TR Rock Hill Hotel/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+61</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <!-- <span class="ad-tag"></span> <a href="#" class="restaurant-name">ณ ลันตาคาเฟ่ & ปลาเผา</a> -->
+                            <p class="restaurant-name">TR Rock Hill Hotel(โรงแรมทีอาร์ร็อคฮิลล์)</p>
+                            <p class="restaurant-tag">XGV4+R7J 728 ตำบล คอหงส์ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            TR Rock Hill Hotel 🏕️มั่นใจทุกการเดินทาง พักผ่อนท่ามกลางธรรมชาติ พร้อมชาร์จพลังให้ทั้งคุณและรถ EV ✓ใช้งานง่าย ✓ชาร์จได้ทันที ✓พร้อมบริการตลอด 24 ชม.
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/Hatyai Signature Hotel/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/Hatyai Signature Hotel/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/Hatyai Signature Hotel/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/Hatyai Signature Hotel/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">โรงแรม หาดใหญ่ ซิกเนเจอร์ (Hatyai Signature Hotel) </p>
+                            <p class="restaurant-tag">44 Noppakaow-Rimmaung Road Korhong อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            โรงแรมขนาดเล็กแห่งนี้มีแผนกต้อนรับบริการ 24 ชั่วโมง, เจ้าหน้าที่อำนวยความสะดวก และรูมเซอร์วิส สถานที่ให้บริการแห่งนี้ยังมีบริการสระว่ายน้ำ และอาหารเช้าฟรีช่วยให้การเข้าพักของคุณยอดเยี่ยมขึ้นไปอีก แขกที่นำรถมาสามารถใช้ที่จอดรถฟรีได้ 
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+                
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/PS SRIPHU HOTEL/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/PS SRIPHU HOTEL/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/PS SRIPHU HOTEL/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/PS SRIPHU HOTEL/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">โรงแรมพีเอส ศรีภู (PS Sriphu Hotel)</p>
+                            <p class="restaurant-tag">1 ซอย พีเอส ศรีภู หมู่ที่ 1 ตำบล ควนลัง อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            สำหรับนักท่องเที่ยวที่มาเยือนหาดใหญ่แล้ว โรงแรมพีเอส ศรีภูเป็นตัวเลือกที่ยอดเยี่ยมสำหรับพักผ่อนและชาร์จพลัง ที่พักแห่งนี้ขึ้นชื่อด้านทำเลที่ยอดเยี่ยมใกล้ร้านอาหารอร่อยๆโรงแรมพีเอส ศรีภูทำให้การสำรวจสิ่งที่ดีที่สุดของหาดใหญ่เป็นเรื่องง่าย
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/The Bed Hatyai/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/The Bed Hatyai/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/The Bed Hatyai/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/The Bed Hatyai/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">โรงแรมเดอะเบดหาดใหญ่ (The Bed Hotel Hat Yai)</p>
+                            <p class="restaurant-tag">170/1-2 ถนน ศุภสารรังสรรค์ ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            The BED หาดใหญ่ ที่พักใหม่ ใจกลางเมือง เดอะ เบด หาดใหญ่ ประสบการณ์ใหม่ในการพักผ่อน สำหรับคนวัยชิค
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/W3 Hotel Hatyai/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/W3 Hotel Hatyai/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/W3 Hotel Hatyai/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/W3 Hotel Hatyai/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">W3 Hotel Hatyai (โรงแรมดับเบิ้ลยู ทรี หาดใหญ่)</p>
+                            <p class="restaurant-tag">8 ราษฎร์ยินดี ซอย 3 ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            โรงแรมทันสมัยที่มองเห็นวิวเขาคอหงส์แห่งนี้ตั้งอยู่ในย่านการค้าสุดคึกคัก ทั้งยังอยู่ห่างจากตลาดกิมหยงที่มีชีวิตชีวาเพียง 2 กม. ห่างจากสถานีรถไฟหาดใหญ่ 3 กม
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/Z Sleep Hotel/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/Z Sleep Hotel/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/Z Sleep Hotel/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/Z Sleep Hotel/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">โรงแรมซี สลีป (Z SLEEP HOTEL | Hat Yai)</p>
+                            <p class="restaurant-tag">1564 Kanjanavanit Road, Hat Yai, 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            โรงแรมบรรยากาศสบายๆ พร้อมส่วนหน้าอาคารที่เป็นกระจกนี้ตั้งอยู่ริมทางหลวงแผ่นดินหมายเลข 407 ห่างจากห้างสรรพสินค้าเซ็นทรัลเฟสติวัลหาดใหญ่โดยใช้เวลาเดิน 4 นาที
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/CC Hotel Hatyai/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/CC Hotel Hatyai/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/CC Hotel Hatyai/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/CC Hotel Hatyai/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">CC Hotel Hatyai (ซีซี โฮเทล หาดใหญ่)</p>
+                            <p class="restaurant-tag">222 Suppasarnrangsarn Rd, ตำบล หาดใหญ่ Hatyai, สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            CC Hotel Hatyai ตั้งอยู่ใจกลางย่านตลาดหาดใหญ่ เหมาะสำหรับนักเดินทางสองคนที่ต้องการวัฒนธรรมและความสะดวกสบาย
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)</p>
+                            <p class="restaurant-tag">151 ถนน แสงศรี ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            เดอะ ฮาบิตา หาดใหญ่ นำเสนอการออกแบบที่ทันสมัยและสถาปัตยกรรมศิลปะ พร้อมด้วย iMac ในแต่ละห้องและห้องสมุดที่อบอุ่นเพื่อเพิ่มความสะดวกสบาย ระเบียงบนดาดฟ้าให้ทัศนียภาพที่สวยงาม
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/โรงแรมคริสตัล (Crystal Hotel)/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/โรงแรมคริสตัล (Crystal Hotel)/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/โรงแรมคริสตัล (Crystal Hotel)/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/โรงแรมคริสตัล (Crystal Hotel)/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">โรงแรมคริสตัล (Crystal Hotel)</p>
+                            <p class="restaurant-tag">4 ซอย 23 ถนน กาญจนวานิช, ตลาดเมืองหาดใหญ่, หาดใหญ่, สงขลา, ไทย, 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            สัมผัสความสะดวกสบายและบริการที่คริสตัล โฮเทล หาดใหญ่ ผ่อนคลายในห้องพักพร้อมวิวสระว่ายน้ำ อ่างน้ำร้อน และเตาผิง เพลิดเพลินกับสระว่ายน้ำในร่ม ฟิตเนส และร้านอาหาร
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+
+                <a href="" class="review-card">
+                    <div class="restaurant-card">
+                        <div class="images-gallery">
+                            <div class="image-stack">
+                                <img src="img/รูปที่พัก/โรงแรมฮ็อป อินน์/1.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/โรงแรมฮ็อป อินน์/2.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/โรงแรมฮ็อป อินน์/3.jpg" alt="" class="gallery-image">
+                                <img src="img/รูปที่พัก/โรงแรมฮ็อป อินน์/4.jpg" alt="" class="gallery-image">
+                                <!-- <div class="gallery-more">+154</div> -->
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <p class="restaurant-name">โรงแรมฮ็อปอินน์ หาดใหญ่ (HOP INN Hat Yai)</p>
+                            <p class="restaurant-tag">1318 ถ. กาญจนวนิช ตำบล หาดใหญ่ อำเภอหาดใหญ่ สงขลา 90110</p>
+                        </div>
+                        <p class="restaurant-description">
+                            เหมาะสำหรับนักเดินทางสองคนที่กำลังมองหาความสะดวกสบาย ฮ็อป อินน์ หาดใหญ่ตั้งอยู่ใกล้มหาวิทยาลัยสงขลานครินทร์ และสะดวกต่อการเข้าถึงร้านอาหาร ตลาด และสถานที่ท่องเที่ยวทางวัฒนธรรมในท้องถิ่น
+                        </p>
+                        <div class="info-footer">
+                            <div class="rating-info">
+                                <span class="star-rating">
+                                    <span class="score red-score">0.0</span>
+                                    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.27l-6.18 3.77L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                                    <span class="review-count">0 รีวิว</span>
+                                </span>
+                                <span class="status open">คลิกเพื่อดูเพิ่มเติม</span>
+                            </div>
+                            <div class="category-list">
+                                <span>โรงแรม</span>, <span>/รีสอร์ท</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> 
+            </div>
+            
+<!-- --------------------------------grid-right--------------------------- -->
+        <div class="sidebar">
+            <div class="sidebar-section map-section">
+                <h3 class="section-title">ค้นหาจากแผนที่</h3>
+                <div class="map-placeholder">
+                    <a href="https://www.google.com/maps/search/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%A1%E0%B8%A2%E0%B8%AD%E0%B8%94%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B9%83%E0%B8%99%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88/@7.0082529,100.4893918,15z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D" class="map-link">
+                        <div class="map-overlay">
+                            <div class="map-button">ดูแผนที่</div> 
+                        </div>
+                        <img src="https://cdn.prod.website-files.com/5c29380b1110ec92a203aa84/66e5ce469b48938aa34d8684_Google%20Maps%20-%20Compressed.jpg" alt="Map">
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-section featured-restaurants">
+                <h3 class="section-title">รายการอื่น ๆ ที่น่าสนใจ</h3>
+                <div class="featured-list">
+                    <div class="featured-item">
+                        <img src="https://img.wongnai.com/p/192x192/2021/06/17/2c3a5105a1094895874254b1f9643d92.jpg" alt="SEQU Restaurant" class="item-image">
+                        <div class="item-info">
+                            <span class="ad-tag">Ad</span> <a href="#" class="item-name">SEQU Restaurant เดอะ คาสลิง แฟริ่ง</a>
+                            <p class="item-description">
+                                ร้าน Hangout สำหรับคนรักไก่ที่เชียงใหม่ กิน ดื่ม ดูดามะยัด ฟังเพลงเพราะ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://img.wongnai.com/p/192x192/2020/09/20/d1e2b5b3a4e941f1989025e115e5b3f1.jpg" alt="ครัวอร่อยอร่อย นครหลวง" class="item-image">
+                        <div class="item-info">
+                            <span class="ad-tag">Ad</span> <a href="#" class="item-name">ครัวอร่อยอร่อย นครหลวง</a>
+                            <div class="item-rating">
+                                <span class="score red-score">3.8</span>
+                                <span class="review-count">11 รีวิว</span>
+                            </div>
+                            <p class="item-description">
+                                ร้านอาหารครบจบที่ภาคเพลินๆ อาหารไทย จีน อีสาน พร้อมด้วยส่วนเล็ก ๆ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section featured-restaurants">
+                <h3 class="section-title">ร้านเพจ Facebook</h3>
+                <div class="featured-list">
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/p/TR-Rock-Hill-Hotel-100064900591300/?locale=th_TH"><img src="img/รูปที่พัก/TR Rock Hill Hotel/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/p/TR-Rock-Hill-Hotel-100064900591300/?locale=th_TH"> <img src="img/รูปที่พัก/TR Rock Hill Hotel/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/p/TR-Rock-Hill-Hotel-100064900591300/?locale=th_TH" class="item-name">TR Rock Hill Hotel</a>
+                            <p class="item-description">
+                                รับจัดงานประชุม/สัมมนา งานจัดเลี้ยง งานแต่ง ห้องพักครบจบที่เดียว
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/hatyaisignaturehotel/?locale=th_TH"><img src="img/รูปที่พัก/Hatyai Signature Hotel/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/hatyaisignaturehotel/?locale=th_TH"><img src="img/รูปที่พัก/Hatyai Signature Hotel/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/hatyaisignaturehotel/?locale=th_TH" class="item-name">Hatyai Signature Hotel</a>
+                            <p class="item-description">
+                                Authentic Stay in Songkhla Style at Hatyai Signature Hotel
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/PSSRIPHUHOTEL/?locale=th_TH"><img src="img/รูปที่พัก/PS SRIPHU HOTEL/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/PSSRIPHUHOTEL/?locale=th_TH"><img src="img/รูปที่พัก/PS SRIPHU HOTEL/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/PSSRIPHUHOTEL/?locale=th_TH" class="item-name">PS Sriphu Hotel </a>
+                            <p class="item-description">
+                                โรงแรมขนาด 79 ห้องพัก. ติดถนนศรีภูวนาถ
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/thebedhatyai/?locale=th_TH"><img src="img/รูปที่พัก/The Bed Hatyai/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/thebedhatyai/?locale=th_TH"><img src="img/รูปที่พัก/The Bed Hatyai/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/thebedhatyai/?locale=th_TH" class="item-name">The bed hatyai hotel</a>
+                            <p class="item-description">
+                                The BED Hatyai , Urban chic stay, Boutique chic Hotel in Hat Yai
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/W3HotelHatyai/?locale=th_TH"><img src="img/รูปที่พัก/W3 Hotel Hatyai/backgroung.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/W3HotelHatyai/?locale=th_TH"><img src="img/รูปที่พัก/W3 Hotel Hatyai/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/W3HotelHatyai/?locale=th_TH" class="item-name">W3 Hotel Hatyai โรงแรมดับเบิ้ลยู ทรี หาดใหญ่ </a>
+                            <p class="item-description">
+                                Hotel with swimming pool in Hatyai Songkhla โรงแรมพร้อมสระว่ายน้ำในอ.หาดใหญ่ จ.สงขลา
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/zsleephotel/?locale=th_TH"><img src="img/รูปที่พัก/Z Sleep Hotel/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/zsleephotel/?locale=th_TH"><img src="img/รูปที่พัก/Z Sleep Hotel/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/zsleephotel/?locale=th_TH" class="item-name">Z SLEEP HOTEL</a>
+                            <p class="item-description">
+                                โรงแรมใกล้ห้างสรรพสินค้าเซ็นทรัล หาดใหญ่
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/cchotelhatyai/?locale=th_TH"><img src="img/รูปที่พัก/CC Hotel Hatyai/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/cchotelhatyai/?locale=th_TH"><img src="img/รูปที่พัก/CC Hotel Hatyai/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/cchotelhatyai/?locale=th_TH" class="item-name">CC Hotel Hatyai</a>
+                            <p class="item-description">
+                                Chic & Cozy stay in the heart of HatYai city.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/HabitaHatyai/?locale=th_TH"><img src="img/รูปที่พัก/เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)/1.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/HabitaHatyai/?locale=th_TH"><img src="img/รูปที่พัก/เดอะ ฮาบิตา หาดใหญ่ (The Habita Hatyai)/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/HabitaHatyai/?locale=th_TH" class="item-name">The Habita Hatyai</a>
+                            <p class="item-description">
+                                Come as a Guest, Leave as a Friend.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/crystalhotelhatyai/?locale=th_TH"><img src="img/รูปที่พัก/โรงแรมคริสตัล (Crystal Hotel)/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/crystalhotelhatyai/?locale=th_TH"><img src="img/รูปที่พัก/โรงแรมคริสตัล (Crystal Hotel)/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/crystalhotelhatyai/?locale=th_TH" class="item-name">Crystal Hotel Hat Yai -โรงเเรมคริสตัล หาดใหญ่</a>
+                            <p class="item-description">
+                                Crystal Hotel Hat Yai: A modern Hotel, distinguishable by offering comfort and personal service, and characterized by its contemporary look.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="featured-list-image">
+                        <a href="https://www.facebook.com/hopinnhotel"><img src="img/รูปที่พัก/โรงแรมฮ็อป อินน์/background.jpg" alt="background" class="featured-list-img"></a>
+                    </div>    
+                    <div class="featured-item">
+                        <a href="https://www.facebook.com/hopinnhotel"><img src="img/รูปที่พัก/โรงแรมฮ็อป อินน์/logo.jpg" alt="SEQU Restaurant" class="item-image"></a>
+                        <div class="item-info">
+                            <span class="ad-tag"></span> <a href="https://www.facebook.com/hopinnhotel" class="item-name">HOP INN Hotel Thailand</a>
+                            <p class="item-description">
+                                เพจ · โรงแรม 02 080 2222 info@HopInnHotel.com
+                            </p>
+                        </div>
+                    </div>
+                    
+                <!-- ------------------------------------------------------ -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------ -->
+<!-- --------------footer tag-------------- -->
+        <footer class="main-footer">
+            <div class="footer-contact-section">
+                <div class="footer-columns-wrapper">
+
+                    <div class="footer-col about-col">
+                        <h4 class="col-title">Hatyai Explorer</h4>
+                        <p class="description-text">
+                            Hatyai Explorer เป็นแพลตฟอร์มดิจิทัลที่มุ่งมั่นจะเป็น <br> 'คู่มือออนไลน์ฉบับสมบูรณ์' สำหรับการสำรวจพื้นที่ อำเภอหาดใหญ่ จังหวัดสงขลา โดยเฉพาะ
+                        </p>
+                        <p class="privilege-text">
+                            "ค้นพบเสน่ห์หาดใหญ่ในฉบับสมบูรณ์"
+                        </p>
+                        <!-- <div class="social-icons">
+                            <a href="#" class="social-icon"></a>
+                            <a href="#" class="social-icon"></a>
+                        </div> -->
+                    </div>
+
+                    <div class="footer-col contact-col">
+                        <h4 class="col-title">Connect with Us</h4>
+                        <div class="contact-item">
+                            <span class="contact-label">E-Mail:</span> <br>
+                            <a href="mailto:6610510126@psu.ac.th" class="contact-value">6610510126@psu.ac.th</a> <br>
+                            <a href="mailto:6610510150@psu.ac.th" class="contact-value">6610510150@psu.ac.th</a> <br>
+                            <a href="mailto:6610510182@psu.ac.th" class="contact-value">6610510182@psu.ac.th</a>
+                        </div>
+                        <!-- <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span class="contact-value">+66 2 115 1336</span>
+                        </div> -->
+                        <div class="contact-item address-item">
+                            <span class="contact-label">Address:</span>
+                            <span class="contact-value address-block">
+                                มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่<br>
+                                15, ถนน กาญจนวณิชย์, ตำบลคอหงส์, อำเภอหาดใหญ่, จังหวัดสงขลา, 90110
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="footer-col menu-col">
+                        <h4 class="col-title">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="restaurant.html">ร้านอาหาร</a></li>
+                            <li><a href="travel.html">สถานที่ท่องเที่ยว</a></li>
+                            <li><a href="stay.html">สถานที่พักผ่อน</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="footer-col menu-col">
+                        <h4 class="col-title">About Us</h4>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="copyright-text">
+                    &copy; 2025 Hatyai Explorer Project. All Rights Reserved. | A Project for 477-301 FULL STACK WEB DEVELOPMENT.
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
